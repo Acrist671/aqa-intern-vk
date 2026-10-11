@@ -22,11 +22,11 @@ export class WidgetPage {
     }
 
     async openWidget() {
-        await this.wrapper().locator(WidgetPage.selector.BUTTON_OPEN).click();
+        await this.page.locator(WidgetPage.selector.BUTTON_OPEN).click();
     }
 
     async closeWidget() {
-        await this.wrapper().locator(WidgetPage.selector.BUTTON_CLOSE).click();
+        await this.page.locator(WidgetPage.selector.BUTTON_CLOSE).click();
     }
 
     getPopularArticles() {
